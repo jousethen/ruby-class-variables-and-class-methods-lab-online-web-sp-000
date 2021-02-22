@@ -30,7 +30,13 @@ class Song
     count_hash = {}
     
     @@genres.each do |genre|
-      count_hash[genre]
+      if count_hash.has_key?(genre)
+        count_hash[genre] += 1 
+      else
+        count_hash[genre] = 1
+      end
     end
+    
+    puts count_hash
   end
 end
