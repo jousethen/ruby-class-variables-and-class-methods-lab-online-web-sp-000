@@ -40,4 +40,18 @@ class Song
     puts count_hash
     return count_hash
   end
+  
+  def self.artist_count
+    count_hash = {}
+    
+    @@artists count_hash.has_key?(artist)
+        count_hash[genre] += 1 
+      else
+        count_hash[genre] = 1
+      end
+    end
+    
+    puts count_hash
+    return count_hash
+  end
 end
