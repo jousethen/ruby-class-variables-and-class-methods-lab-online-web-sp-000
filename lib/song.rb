@@ -11,11 +11,11 @@ class Song
     @genre = genre
     @@count += 1
     
-    if @artists.include?(artist) == false 
-      @artists << artist
+    if @@artists.include?(artist) == false 
+      @@artists << artist
     end
-    if @genres.include?(genre) == false 
-      @genres << genre
+    if @@genres.include?(genre) == false 
+      @@genres << genre
     end
   end
   
