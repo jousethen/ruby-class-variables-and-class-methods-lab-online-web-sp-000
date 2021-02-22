@@ -38,5 +38,6 @@ class Song
     end
     
     puts count_hash
+    return count_hash
   end
 end
