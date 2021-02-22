@@ -45,9 +45,9 @@ class Song
     count_hash = {}
     
     @@artists count_hash.has_key?(artist)
-        count_hash[genre] += 1 
+        count_hash[artist] += 1 
       else
-        count_hash[genre] = 1
+        count_hash[artist] = 1
       end
     end
     
