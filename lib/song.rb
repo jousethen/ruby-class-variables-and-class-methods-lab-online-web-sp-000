@@ -14,6 +14,9 @@ class Song
     if @artists.includes?(artist) == false 
       @artists << artist
     end
+    if @genres.includes?(genre) == false 
+      @genres << genre
+    end
   end
   
   def self.count
